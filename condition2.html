@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+ <p></p>   
+</body>
+<script>
+    const yearOfBirth= prompt('in what year were you born')
+    const currentYear= new Date().getFullYear() 
+
+
+    let status
+    let status2
+
+    currentYear - yearOfBirth >= 18 ? status = 'You are old enough to vote': "too young to vote"
+
+    document.querySelector('p').innerHTML = status
+</script>
+
+
+</html>
