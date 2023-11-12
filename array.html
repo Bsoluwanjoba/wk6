@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+  <ul>
+
+  </ul>  
+
+  <ol>
+
+  </ol>
+</body>
+
+<script>
+    let F6B6= 'korede slyvester joseph joba dimeji toyosi oreoluwa daniel victor tolu munir chuiwinke shola ismail'
+    
+    const ol=document.querySelector('ol')
+    const students = F6B6.split(' ')
+
+    students.push('martin')
+    students.pop()
+    students.shift()
+    students.unshift('Oluwanjoba')
+
+    students[3] = 'Oluwanjoba'
+    students.splice(8,0, 'Korede')
+    
+    students.splice(students.indexOf('Oluwanjoba'), 1, 'tolu', 'munir')
+
+    // const vowels = five.filter(name => name.startsWith(''))
+
+    for(let student of students){
+       const list= document.createElement('li')
+       ol.append(list)
+       list.textContent= student.toUpperCase()
+        // console.log(student.toUpperCase())
+    }
+    console.log(students)
+</script>
+</html>
