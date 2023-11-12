@@ -39,16 +39,23 @@ console.log(`This is the sum of `);
 // }
 
 
-const arr3 = ["mon", "tues", ["wed", "thurs", ["fri", "sat"]], "sun"]
+const arr3 = [[1, 2, [3, 4, 5], 6, 7]]
 
-let results = arr3.flat(4)
-console.log(`This is the Flatten method: ${results}`);
+function flattenArray (arr3) {
+    return arr3.flat (Infinity)
+}
+const nestedArray = [[1, 2, [3, 4, 5], 6, 7]]
+const flatArray = flattenArray (nestedArray)
+console.log(`THe Flat Array is: ${flatArray}`);
+
+let results = arr3.flat(2)
+console.log(`This is the Flatten method: [${results} ]`);
 
 const arr1 = [3, 5, 6, 10, 11, 20]
 const arr2 = [1, 2, 7, 8, 15, 19]
 
- result = [...arr1, ...arr2]
+let result = [...arr1, ...arr2]
 function mergeTwo(arr1, arr2) {
     return arr1.concat(arr2).sort((a,b) => a-b)
   }
-  console.log(`This is the result of the merged array ${result}`)
+  console.log(`This is the result of the merged array [${result} ]`)
