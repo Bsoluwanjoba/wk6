@@ -1,20 +1,20 @@
 let arr = [2,3,7,23,9,4,675,8,0,-1,8,45,-69,30,55]
 const numbers = arr.reverse ()
 
-console.log(`The result of the reversed array is: (${numbers})`);
+console.log(`The result of the reversed array is: [${numbers}]`);
 
 const min = Math.min(...arr)
 const max = Math.max(...arr)
 
-console.log(`The result of the minimum is: ${min}`, `The result of the maximum is: ${max}`);
+console.log(`The result of the minimum is: [${min}]`, `The result of the maximum is: [${max}]`);
 
-const odd = arr.filter(oddNumbers)
+const odd = oddNumbers(arr)
 
 function oddNumbers(arr) {
-    return oddNumbers;
+    return arr.filter(num => num % 2 === 1)
 }
 
-console.log(odd);
+console.log(`The Odd numbers are: [${odd}]`);
 
 
 
@@ -39,15 +39,15 @@ console.log(`This is the sum of `);
 // }
 
 
-const arr3 = [2, [7, 15], [39, 54, 69] [74, 43, 22], 16, 19 [-5, -6, -100]]
+const arr3 = ["mon", "tues", ["wed", "thurs", ["fri", "sat"]], "sun"]
 
 let results = arr3.flat(4)
-console.log(results);
+console.log(`This is the Flatten method: ${results}`);
 
 const arr1 = [3, 5, 6, 10, 11, 20]
 const arr2 = [1, 2, 7, 8, 15, 19]
 
-const result = [...arr1, ...arr2]
+ result = [...arr1, ...arr2]
 function mergeTwo(arr1, arr2) {
     return arr1.concat(arr2).sort((a,b) => a-b)
   }
